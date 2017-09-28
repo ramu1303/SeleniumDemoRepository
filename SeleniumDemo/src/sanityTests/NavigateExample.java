@@ -23,6 +23,7 @@ static WebDriver driver;
 		driver.navigate().forward();
 		Thread.sleep(3000);
 		driver.navigate().refresh();*/
+		//single line comment
 	}
 
 }
