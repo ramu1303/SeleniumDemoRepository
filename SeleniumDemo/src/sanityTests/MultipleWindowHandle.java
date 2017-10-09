@@ -19,7 +19,7 @@ public class MultipleWindowHandle
 		String parentWindow=driver.getWindowHandle();
 		Set<String> childWindows=driver.getWindowHandles();
 		
-		/*for(String s:childWindows)
+		for(String s:childWindows)
 		{
 			if(!parentWindow.equalsIgnoreCase(s))
 			{
@@ -27,8 +27,8 @@ public class MultipleWindowHandle
 				System.out.println(driver.getTitle());
 				driver.close();
 			}
-		}*/
-		ArrayList<String> al=new ArrayList<>(childWindows);
+		}
+		/*ArrayList<String> al=new ArrayList<String>(childWindows);
 		driver.switchTo().window(al.get(3));
 		driver.close();
 		driver.switchTo().window(al.get(2));
@@ -36,7 +36,7 @@ public class MultipleWindowHandle
 		driver.switchTo().window(al.get(1));
 		driver.close();
 		driver.switchTo().window(al.get(0));
-		driver.close();
+		driver.close();*/
 	}
 
 }

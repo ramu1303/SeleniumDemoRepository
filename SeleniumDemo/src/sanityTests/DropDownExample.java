@@ -1,5 +1,6 @@
 package sanityTests;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -22,6 +23,12 @@ public class DropDownExample {
 		//dropDown.selectByVisibleText("India");
 		List<WebElement> e=dropDown.getOptions();
 		System.out.println(e.size());
+		
+		Iterator<WebElement> itr= e.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next().getText());
+		}
 		
 	}
 

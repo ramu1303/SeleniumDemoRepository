@@ -17,11 +17,11 @@ public class MouseHover {
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		WebElement element=driver.findElement(By.xpath("//div/a/span[text()='Shop by']"));
+		/*WebElement element=driver.findElement(By.xpath("//div/a/span[text()='Shop by']"));
         
 		Actions action=new Actions(driver);
         action.moveToElement(element).build().perform();
-        driver.findElement(By.xpath("//div/span/span[text()='Amazon Prime Video']")).click();
+        driver.findElement(By.xpath("//div/span/span[text()='Amazon Prime Video']")).click();*/
         driver.findElement(By.xpath("//div/a/span[text()='All Videos']")).click();
         
        driver.findElement(By.xpath("//div/a[@class='nav-logo-tagline nav-sprite nav-prime-try']")).click();
